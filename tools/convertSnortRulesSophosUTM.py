@@ -27,15 +27,17 @@ INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, n
 INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 7, 7, 53, 123, 'sophosutm: IPS Portscan Detected' ,4, 3);
 INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 8, 2, 24, 111, 'sophosutm: Authentication Succesfull' ,3, 2);
 INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 9, 2, 24, 110, 'sophosutm: Authentication Failed' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 10, 3, 75, NULL, 'sophosutm: Packet Filter Accept' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 11, 3, 76, NULL, 'sophosutm: Packet Filter Reject' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 12, 3, 76, NULL, 'sophosutm: Packet Filter Drop' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144200, 13, 109, NULL, 'sophosutm: ReverseProxy code 200' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144400, 13, 116, NULL, 'sophosutm: ReverseProxy code 400' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144401, 13, 113, NULL, 'sophosutm: ReverseProxy code 401' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144403, 13, 113, NULL, 'sophosutm: ReverseProxy code 403' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144404, 13, 118, NULL, 'sophosutm: ReverseProxy code 404' ,3, 2);
-INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144500, 13, 116, NULL, 'sophosutm: ReverseProxy code 500' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 10, 3, 75, 102, 'sophosutm: Packet Filter Accept' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 11, 3, 76, 102, 'sophosutm: Packet Filter Reject' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 12, 3, 76, 102, 'sophosutm: Packet Filter Drop' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 13, 7, 54, 121, 'sophosutm: Advanced Threat Protection Alert' , 5, 4);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144200, 13, 109, 102, 'sophosutm: ReverseProxy code 200' ,1, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144400, 13, 116, 102, 'sophosutm: ReverseProxy code 400' ,2, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144401, 13, 113, 102, 'sophosutm: ReverseProxy code 401' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144403, 13, 113, 102, 'sophosutm: ReverseProxy code 403' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144404, 13, 118, 102, 'sophosutm: ReverseProxy code 404' ,3, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144500, 13, 116, 102, 'sophosutm: ReverseProxy code 500' ,2, 2);
+INSERT INTO plugin_sid (plugin_id, sid, category_id, subcategory_id, class_id, name, priority, reliability) VALUES (4444, 144502, 13, 116, 102, 'sophosutm: ReverseProxy code 502' ,2, 2);
 """
 for line in lines:
 	line = line.strip()
