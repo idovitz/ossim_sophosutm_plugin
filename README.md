@@ -35,3 +35,20 @@ In case of multiple UTMs:
 if ($fromhost-ip == '<IP-SOPHOS-1>' or $fromhost-ip == '<IP-SOPHOS-2>' or $fromhost-ip == '<IP-SOPHOS-3>') then /var/log/sophosutm.log
 & ~
 ```
+
+Generate SQL
+------------
+
+use convertor (python3!)
+```
+python3 tools/convertSnortRulesSophosUTM.py astaro.rules > sophosutm.sql
+```
+
+copy astaro.rules from your UTM /etc/snort/rules/astaro.rules (i cant publish because of copyrights)
+
+then import sql in mysql database and restart ossim services
+```
+ossim-db < sophosutm.sql
+/etc/init.d/ossim-agent restart
+/etc/init.d/ossim-server restart
+```
